@@ -43,3 +43,10 @@
     background-color: #00265f;
     color: white;
 }
+/* footer end */
+
+/* form */
+.errordisplay{
+    display: none;
+}
+/* form end*/
