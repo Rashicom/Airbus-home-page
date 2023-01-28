@@ -2,9 +2,17 @@
 .navcol{
     background-color: #00265f;
 }
+#mainimgdiv{
+    width: 100%;
+    padding: 0px;
+}
 #mainimg{
     height: 100%;
-    width: 100%;
+    width: 100%;    
+    
+}
+#mainimgsection{
+    margin: 0px;
 }
 /* nav bar and main pic end here*/
 
@@ -42,6 +50,14 @@
 .footbar{
     background-color: #00265f;
     color: white;
+    font-size: 13px;
+}
+.footerlist ul li a{
+    text-decoration: none;
+
+}
+.footerlist ul li{
+
 }
 /* footer end */
 

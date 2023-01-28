@@ -1,44 +1,44 @@
 
 $(document).ready(function(){
-    var x = new Boolean(false);
+
     $("#fname").blur(function(){
         var name=$(this).val()
         if(name.length==0){
             $("#nameerror").show()
-            x=false
+            
         }
         else{
             $("#nameerror").hide()
-            x=true
+            
         }
     })
     $("#lname").blur(function(){
         var lname=$(this).val()
         if(lname.length==0){
             $("#lnameerror").show()
-            x=false
+            
         }
         else{
             $("#lnameerror").hide()
-            x=true
+            
         }
     })
     $("#mail").blur(function(){
         var mail=$(this).val()
         if(mail.length==0){
             $("#emailerror").show()
-            x=false
+            
         }
         else{
             $("#emailerror").hide()
-            x=true
+            
         }
     })
     $("#contact").blur(function(){
         var contact=$(this).val()
         if(contact.length!=10){
             $("#contacterror").show()
-            x=false
+            
         }
         else{
             $("#contacterror").hide()
@@ -47,16 +47,22 @@ $(document).ready(function(){
 
     })
 
+    // button click action    
     $("#formbtn").click(function(){
-        if(x==true){
-            console.log("fields are compleately filled")
-        }
-        else{
+        var firstname=$("#fname").val()
+        var lastname=$("#lname").val()
+        var mail=$("#mail").val()
+        var contact=$("#contact").val()
 
-            console.log("field not filled")
-        }
-
+        // display on consol
+        console.log("first name :"+firstname)
+        console.log("last name :"+lastname)
+        console.log("E mail id :"+mail)
+        console.log("contact : "+contact)
     })
+    
+
+    // click action end here
 
 
 
