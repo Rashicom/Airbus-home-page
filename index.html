@@ -163,38 +163,38 @@
           <hr>
           <br>
           <div class="">
-            <form>
+            <form method="post" action="https://script.google.com/macros/s/AKfycbyCZktYvfDs9pZMlkswRUhC-Hal3-CRe5IcRypVnwFB_uVB94XnAoBvJabT8-_w91ls/exec">
               <div class="row ">
                 <div class="col-12 col-md-6 mb-3">
                   <label for="">First name</label>
                   <!-- name error tag-->
                   <label class="text-danger errordisplay" id="nameerror" for="nameerror">Name requered</label>
 
-                  <input id="fname" type="text" class="form-control" placeholder="First name">
+                  <input id="fname" type="text" name="name" class="form-control" placeholder="First name">
                 </div>
                 <div class="col-12 col-md-6 mb-3">
                   <label for="">Last name name</label>
                   <!-- lastnamename error tag-->
                   <label  class="text-danger errordisplay" id="lnameerror" for="lastnameerror">Last name requered</label>
 
-                  <input id="lname" type="text" class="form-control" placeholder="Last name">
+                  <input id="lname" type="text" name="lastname" class="form-control" placeholder="Last name">
                 </div>
                 <div class="col-12 col-md-6 mb-3">
                   <label for="">E mail</label>
                   <!-- e mail error tag-->
                   <label class="text-danger errordisplay" id="emailerror" for="emailerror">E mail requered</label>
 
-                  <input id="mail" type="email" class="form-control" placeholder="E mail">
+                  <input id="mail" type="email" name="email" class="form-control" placeholder="E mail">
                 </div>
                 <div class="col-12 col-md-6 mb-3">
                   <label for="">Contact number</label>
                   <!-- contact error tag-->
                   <label class="text-danger errordisplay" id="contacterror" for="contacterror">Contact must be 10 digits</label>
 
-                  <input id="contact" type="text" class="form-control" placeholder="Mobile number">
+                  <input id="contact" type="text" name="contact" class="form-control" placeholder="Mobile number">
                 </div>
                 <div class="col-12 text-center">
-                  <button type="button" id="formbtn" class="btn btn-success" onclick="">Submit</button>
+                  <button type="submit" id="formbtn" class="btn btn-success">Submit</button>
                 </div>
               </div>
             </form>
